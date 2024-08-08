@@ -44,7 +44,7 @@ public class RotatedSortedArray {
             if(nums[mid]== target) return mid;
             else if(nums[low]<= nums[mid]){  //left sorteed
                 //check element lies in which part of array
-                if(nums[low]<= target && target > nums[mid]){
+                if(nums[low]<= target && target < nums[mid]){
                     high = mid-1;
                 }
                 else{
